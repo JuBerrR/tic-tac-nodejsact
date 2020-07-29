@@ -1,11 +1,17 @@
 const GameModel = require('../schema');
 
 const create = async ({ gameId, board }) => {
-  const game = new GameModel({ gameId, board });
+  const result = await GameModel.updateMany(
+    { gameId },
+    { $addToSet: { board: [board] } },
+    { upsert: true },
+  );
 
-  const result = await game.save();
+  if (result.n === 1) {
+    return 'updated';
+  }
 
-  return result;
+  return {};
 };
 
 module.exports = create;

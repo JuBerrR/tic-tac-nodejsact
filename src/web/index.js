@@ -17,9 +17,8 @@ app.get('/health', routes.healthCheck);
 
 app.get('/game/:gameId', routes.game.findOne);
 app.post('/game', routes.game.create);
-app.put('/game', routes.game.update);
 
 app.listen(PORT, () => {
   // eslint-disable-next-line no-console
-  console.log(`App listening on ${PORT}, pid = ${process.pid}`); // todo make config
+  console.log(`App listening on ${PORT}, pid = ${process.pid}`);
 });
