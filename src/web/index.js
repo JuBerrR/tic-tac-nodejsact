@@ -15,6 +15,8 @@ middlewares.beforeHandler.forEach((_) => _(app));
 
 app.get('/health', routes.healthCheck);
 
+// TODO add docker file, update readme, add one meaningful test
+
 app.get('/game/:gameId', routes.game.findOne);
 app.post('/game', routes.game.create);
 

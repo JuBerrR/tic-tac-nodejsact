@@ -3,9 +3,7 @@ const { CreateGameMethod } = require('../../../../methods');
 const create = async (req, res) => {
   const result = await CreateGameMethod(req.body);
 
-  // fix error messages and status codes
-
-  if (!result || result.error) {
+  if (!result) {
     res.status(400).json(result);
   } else res.status(200).json({ result });
 };

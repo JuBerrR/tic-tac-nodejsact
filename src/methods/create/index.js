@@ -13,7 +13,7 @@ const CreateGameMethod = async (parameters) => {
   try {
     const result = await create({ gameId, board });
 
-    return result.gameId;
+    return result;
   } catch (err) {
     return err;
   }

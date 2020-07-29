@@ -4,8 +4,6 @@ const serializer = require('./serializer');
 const findOne = async (req, res) => {
   const result = await FindGameMethod(req.params);
 
-  // fix error messages and status codes
-
   if (!result || result.error) {
     res.status(400).json(result);
   } else {
