@@ -1,0 +1,40 @@
+{
+  "name": "tic-tac-nodejsact",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JuBerrR/tic-tac-nodejsact.git"
+  },
+  "keywords": [
+    "tic-tac-toe",
+    "node.js"
+  ],
+  "author": "Justas Beresnevicius",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JuBerrR/tic-tac-nodejsact/issues"
+  },
+  "homepage": "https://github.com/JuBerrR/tic-tac-nodejsact#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "joi": "^17.1.1",
+    "lodash": "^4.17.19",
+    "mongoose": "^5.9.25"
+  },
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-jsx-a11y": "^6.3.0",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.0"
+  }
+}
