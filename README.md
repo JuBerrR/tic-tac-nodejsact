@@ -19,3 +19,4 @@ body must look like this
   "board": [],
   "gameId: '00000000-0000-0000-0000-000000000000'
 }
+###### Don't forget to change DB_URL in config file
